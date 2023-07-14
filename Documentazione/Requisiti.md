@@ -12,7 +12,7 @@ L'obiettivo è creare un sito web che permetta di:
 
 
 # Tecnologie
-Per realizzare l'intero proggetto usare:
+Per realizzare l'intero progetto usare:
 - MySQL
 - PHP 8
 - Python 3.10
