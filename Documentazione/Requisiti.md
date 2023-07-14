@@ -42,3 +42,4 @@ Gli utenti hanno le seguenti caratteristiche:
 - Email
 - Telefono (facoltativo)
 - Telegram Username (facoltativo)
+- Ruolo
