@@ -9,7 +9,9 @@ In aggiunta ci saranno tutti i tool per fare le pubblicazioni, registrarsi, fare
 
 # API
 Per creare tutto verranno create delle API dedicate che avranno compiti specifici in base al contesto.
-
+1. [Registrazione](#registrazione)
+2. [Login](#login)
+3. [Creazione post](#crea-post)
 
 ## Response standard
 Le response, salvo specifici casi indicati puntualmente, saranno tutte le medesime per tutte le API e saranno composte in questo modo:
@@ -53,6 +55,24 @@ La response è quella [Standard](#response-standard)
 |sesso|String|si|solo 2 opzioni M o F|
 |telefono|String|no|Con o senza prefisso|
 |email|String|si|max 255 caratteri|
+
+### Response
+La response è quella [Standard](#response-standard)
+
+
+## Crea post
+
+### Request
+|Nome|Tipo|Mandatory|Note|
+|----|----|---------|----|
+|titolo|String|si|Titolo del post|
+|microCategoria|String|no|La categoria di appartenenza se possibile (e.g. Chimica)|
+|categoria|String|si|La macrocategoria di appartenenza (e.g. Anime, Scienza)|
+|descrizioneBreve|String|si|max 100 caratteri, anteprima nel link|
+|descrizioneLunga|String|si|Descrizione visulizzata come anteprima del post sul sito|
+|autore|String|si|Chi ha scritto il post|
+|tags|String|no|Tag per rintracciare, divisi da virgole|
+|visibilita|String|si|Pubblico, privato, limitato|
 
 ### Response
 La response è quella [Standard](#response-standard)
